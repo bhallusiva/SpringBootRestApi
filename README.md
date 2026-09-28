@@ -1,93 +1,66 @@
-# Spring Boot REST API – CRUD Practice
+# ☕ Spring Boot REST API
 
-This is a small hands-on practice project developed to understand the basics of **REST APIs using Spring Boot**.
+A hands-on Java backend project built to understand how **REST APIs and CRUD operations are implemented using Spring Boot**.
 
-Through this project, I implemented the basic **CRUD operations** for managing products using different HTTP methods.
+The project focuses on clean separation between controller, service and model responsibilities and serves as a foundation for more advanced Spring Boot applications.
 
-## What I Practiced
+## 🚀 Features
 
-| Operation            | HTTP Method | Description                     |
-| -------------------- | ----------- | ------------------------------- |
-| Add Product          | `POST`      | Add a new product               |
-| Get Product by ID    | `GET`       | Retrieve a product using its ID |
-| Update Product       | `PUT`       | Update an existing product      |
-| Delete Product by ID | `DELETE`    | Delete a product using its ID   |
+- Create a product
+- Retrieve a product by ID
+- Update a product
+- Delete a product by ID
+- RESTful HTTP method mapping
+- Controller → Service → Model flow
 
-## REST API Endpoints
+## 🔌 API Endpoints
 
-### 1. Add Product
+| Operation | Method | Endpoint |
+|---|---|---|
+| Create product | POST | `/Products` |
+| Get product | GET | `/Products/{prodId}` |
+| Update product | PUT | `/Products` |
+| Delete product | DELETE | `/Products/{prodId}` |
 
-```http
-POST /Products
-```
+## 🛠️ Tech Stack
 
-Used to add a new product.
+- Java
+- Spring Boot
+- Spring Web
+- Maven
+- REST APIs
 
-### 2. Get Product by ID
-
-```http
-GET /Products/{prodId}
-```
-
-Used to retrieve a specific product using its product ID.
-
-### 3. Update Product
-
-```http
-PUT /Products
-```
-
-Used to update an existing product.
-
-### 4. Delete Product by ID
-
-```http
-DELETE /Products/{prodId}
-```
-
-Used to delete a specific product using its product ID.
-
-## Technologies Used
-
-* Java
-* Spring Boot
-* Spring Web
-* Maven
-* REST API
-
-## Key Concepts Learned
-
-* Understanding REST APIs
-* HTTP methods: `GET`, `POST`, `PUT`, `DELETE`
-* Creating REST controllers using `@RestController`
-* Mapping endpoints using `@GetMapping`, `@PostMapping`, `@PutMapping`, and `@DeleteMapping`
-* Using `@PathVariable`
-* Handling HTTP requests and responses
-* Basic CRUD operations in Spring Boot
-* Understanding the flow between Controller, Service, and Model layers
-
-## Project Structure
+## 📁 Project Structure
 
 ```text
-src
-└── main
-    ├── java
-    │   └── com.example.SpringWeb
-    │       ├── Controller
-    │       │   ├── HomeController.java
-    │       │   └── ProductController.java
-    │       ├── Model
-    │       │   └── Product.java
-    │       ├── Service
-    │       │   └── ProductService.java
+src/
+└── main/
+    ├── java/
+    │   └── com.example.SpringWeb/
+    │       ├── Controller/
+    │       ├── Model/
+    │       ├── Service/
     │       └── SpringWebApplication.java
-    │
-    └── resources
+    └── resources/
         └── application.properties
 ```
 
-## Purpose
+## 🧠 Concepts Practiced
 
-The main purpose of this project was to gain **practical experience with Spring Boot REST API development** and understand how different HTTP methods are used to perform CRUD operations.
+- `@RestController`
+- `@GetMapping`
+- `@PostMapping`
+- `@PutMapping`
+- `@DeleteMapping`
+- `@PathVariable`
+- HTTP request/response handling
+- CRUD architecture
+- Layered backend structure
 
-This project serves as a foundation for building more advanced **Spring Boot backend applications** in the future.
+## 🎯 Purpose
+
+This project is part of my progression toward **Java backend development** and provides the foundation for adding persistence, validation, DTOs, exception handling, Spring Data JPA and Spring Security.
+
+## 👨‍💻 Author
+
+**Siva Bhallu** — [GitHub](https://github.com/bhallusiva)
